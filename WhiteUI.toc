@@ -1,0 +1,9 @@
+## Tile: WhiteUI
+## Notes: WhiteUI
+## Autho: Jostvian
+## Version: 20250210.01
+## SavedVariables: WhiteUiDB
+## OptionalDeps: BigWigs, Details, MRT, NameplateAuras, OmniCD, WarpDeplete, WeakAuras, Cell, Cell_UnitFrames
+
+embeds.xml
+Core\Load.xml
