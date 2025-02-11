@@ -24,7 +24,7 @@ function WUI:Initialize()
     end
     
     if self.db.global.profiles and not self.db.char.installed then 
-        self:Nofitication("Do you wish to load your selected WhiteUI profiles onto this character?", "Yes", function() self:LoadProfiles() end, "No", function() self.db.char.installed = true end)
+       -- self:Notification("Do you wish to load your selected WhiteUI profiles onto this character?", "Yes", function() self:LoadProfiles() end, "No", function() self.db.char.installed = true end)
     end
 
 end

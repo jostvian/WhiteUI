@@ -4,8 +4,8 @@ WUI.BarTenderData = {
     ["namespaces"] = {
         ["QueueStatus"] = {
             ["position"] = {
-                ["y"] = 80.5000228881836,
-                ["x"] = -431.7369384765625,
+                ["y"] = 40.00000762939453,
+                ["x"] = -407.516357421875,
             },
             ["version"] = 3,
         },
@@ -17,7 +17,10 @@ WUI.BarTenderData = {
                     ["skin"] = {
                         ["Zoom"] = true,
                     },
-                    ["WoW10Layout"] = true,
+                    ["visibility"] = {
+                        ["combat"] = false,
+                        ["nocombat"] = false,
+                    },
                     ["fadeoutalpha"] = 0,
                     ["elements"] = {
                         ["hotkey"] = {
@@ -26,16 +29,13 @@ WUI.BarTenderData = {
                     },
                     ["version"] = 3,
                     ["position"] = {
-                        ["y"] = 93.19360542297363,
-                        ["x"] = -213.3749542236328,
-                        ["point"] = "BOTTOM",
+                        ["y"] = -150.4999618530273,
+                        ["x"] = 259.0863952636719,
+                        ["point"] = "CENTER",
                         ["scale"] = 0.75,
                     },
                     ["hideborder"] = true,
-                    ["visibility"] = {
-                        ["combat"] = false,
-                        ["nocombat"] = false,
-                    },
+                    ["WoW10Layout"] = true,
                     ["states"] = {
                         ["default"] = 1,
                         ["custom"] =
@@ -47,7 +47,7 @@ WUI.BarTenderData = {
                     ["skin"] = {
                         ["Zoom"] = true,
                     },
-                    ["fadeoutalpha"] = 0,
+                    ["fadeout"] = true,
                     ["version"] = 3,
                     ["position"] = {
                         ["y"] = -2.250000536441803,
@@ -56,29 +56,29 @@ WUI.BarTenderData = {
                         ["scale"] = 0.75,
                         ["growVertical"] = "UP",
                     },
-                    ["fadeout"] = true,
+                    ["fadeoutalpha"] = 0,
                     ["WoW10Layout"] = true,
                 },
                 {
                     ["flyoutDirection"] = "LEFT",
-                    ["fadeout"] = true,
                     ["skin"] = {
                         ["Zoom"] = true,
                     },
-                    ["WoW10Layout"] = true,
-                    ["position"] = {
-                        ["y"] = -115.2500457763672,
-                        ["x"] = 259.6248779296875,
-                        ["point"] = "CENTER",
-                        ["scale"] = 0.75,
-                    },
-                    ["fadeoutalpha"] = 0,
-                    ["hideborder"] = true,
-                    ["version"] = 3,
                     ["visibility"] = {
                         ["combat"] = false,
                         ["nocombat"] = false,
                     },
+                    ["hideborder"] = true,
+                    ["fadeout"] = true,
+                    ["version"] = 3,
+                    ["position"] = {
+                        ["y"] = -115.2500305175781,
+                        ["x"] = 259.0863952636719,
+                        ["point"] = "CENTER",
+                        ["scale"] = 0.75,
+                    },
+                    ["fadeoutalpha"] = 0,
+                    ["WoW10Layout"] = true,
                 },
                 {
                     ["flyoutDirection"] = "LEFT",
@@ -87,9 +87,8 @@ WUI.BarTenderData = {
                     ["skin"] = {
                         ["Zoom"] = true,
                     },
-                    ["version"] = 3,
                     ["fadeoutalpha"] = 0,
-                    ["hideborder"] = true,
+                    ["version"] = 3,
                     ["position"] = {
                         ["growHorizontal"] = "LEFT",
                         ["x"] = 426.2803344726563,
@@ -97,49 +96,50 @@ WUI.BarTenderData = {
                         ["scale"] = 0.75,
                         ["y"] = 72,
                     },
+                    ["hideborder"] = true,
                     ["WoW10Layout"] = true,
                 },
                 {
                     ["fadeout"] = true,
                     ["skin"] = {
                         ["Zoom"] = true,
-                    },
-                    ["WoW10Layout"] = true,
-                    ["hideborder"] = true,
-                    ["version"] = 3,
-                    ["fadeoutalpha"] = 0,
-                    ["position"] = {
-                        ["y"] = -80,
-                        ["x"] = -700,
-                        ["point"] = "RIGHT",
-                        ["scale"] = 0.75,
                     },
                     ["visibility"] = {
                         ["combat"] = false,
                         ["nocombat"] = false,
                     },
+                    ["position"] = {
+                        ["y"] = -80.00003051757812,
+                        ["x"] = 259.0863952636719,
+                        ["point"] = "CENTER",
+                        ["scale"] = 0.75,
+                    },
+                    ["fadeoutalpha"] = 0,
+                    ["version"] = 3,
+                    ["hideborder"] = true,
+                    ["WoW10Layout"] = true,
                 },
                 {
                     ["hideequipped"] = true,
-                    ["fadeout"] = true,
                     ["skin"] = {
                         ["Zoom"] = true,
                     },
-                    ["WoW10Layout"] = true,
-                    ["position"] = {
-                        ["y"] = 60,
-                        ["x"] = -213.7500457763672,
-                        ["point"] = "BOTTOM",
-                        ["scale"] = 0.75,
-                    },
-                    ["version"] = 3,
                     ["hideborder"] = true,
-                    ["fadeoutalpha"] = 0,
                     ["visibility"] = {
                         ["combat"] = false,
                         ["always"] = false,
                         ["nocombat"] = false,
                     },
+                    ["fadeout"] = true,
+                    ["fadeoutalpha"] = 0,
+                    ["position"] = {
+                        ["y"] = 74.81819343566895,
+                        ["x"] = -213.3751068115234,
+                        ["point"] = "BOTTOM",
+                        ["scale"] = 0.75,
+                    },
+                    ["version"] = 3,
+                    ["WoW10Layout"] = true,
                 },
                 {
                     ["version"] = 3,
@@ -210,26 +210,26 @@ WUI.BarTenderData = {
         },
         ["MicroMenu"] = {
             ["fadeout"] = true,
-            ["fadeoutalpha"] = 0.05,
+            ["version"] = 3,
             ["position"] = {
                 ["y"] = -3.49999737739563,
-                ["x"] = -250.4390869140625,
+                ["x"] = -218.4927978515625,
                 ["point"] = "BOTTOMRIGHT",
-                ["growVertical"] = "UP",
                 ["growHorizontal"] = "LEFT",
+                ["growVertical"] = "UP",
             },
-            ["version"] = 3,
+            ["fadeoutalpha"] = 0.05,
         },
         ["BagBar"] = {
             ["fadeout"] = true,
             ["enabled"] = false,
-            ["version"] = 3,
+            ["fadeoutalpha"] = 0,
             ["position"] = {
                 ["y"] = 80,
                 ["x"] = -212,
                 ["point"] = "BOTTOMRIGHT",
             },
-            ["fadeoutalpha"] = 0,
+            ["version"] = 3,
         },
         ["BlizzardArt"] = {
             ["artLayout"] = "MODERN",
@@ -252,7 +252,39 @@ WUI.BarTenderData = {
                 ["point"] = "LEFT",
                 ["scale"] = 0.75,
             },
+        },
+        ["ExtraActionBar"] = {
+            ["position"] = {
+                ["y"] = 229.9875030517578,
+                ["x"] = -63.50006103515625,
+                ["point"] = "BOTTOM",
+            },
+            ["version"] = 3,
+        },
+        ["PetBar"] = {
+            ["version"] = 3,
+            ["position"] = {
+                ["y"] = 34.00000762939453,
+                ["x"] = -162.4999389648438,
+                ["point"] = "BOTTOM",
+            },
+        },
+        ["Vehicle"] = {
+            ["position"] = {
+                ["y"] = 228.5003509521484,
+                ["x"] = -87.913818359375,
+                ["point"] = "BOTTOM",
+            },
+            ["version"] = 3,
         }
 
+    },
+    ["profile"] = {
+        ["blizzardVehicle"] = true,
+        ["focuscastmodifier"] = false,
+        ["minimapIcon"] = {
+            ["hide"] = true,
+        },
+        ["outofrange"] = "hotkey",
     }
 }

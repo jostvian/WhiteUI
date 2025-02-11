@@ -1,4 +1,5 @@
 local WUI = unpack(WhiteUI)
+local SE = WUI:GetModule("Setup")
 
 WUI.Options = {
     name = "WhiteUI",
@@ -24,10 +25,12 @@ WUI.Options = {
             type = "group",
             args = {
                 bigwigs = {
-                    name = "Details",
+                    name = "Bartender4",
+                    desc = "Load Bartender4 saved or default profile",
                     type = "execute",
+                    hidden = function() return not WUI:IsAddOnEnabled("Bartender4") end,
                     func = function()
-                        WhiteUI:LoadDetails()
+                        SE:Setup("Bartender4", true)
                     end
                 },
             }

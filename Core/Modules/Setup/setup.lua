@@ -47,20 +47,29 @@ local function IsProfileExisting(db)
 end
 
 function SetupTable.Bartender4(import, addon)
+	
     local Bartender4DB = Bartender4DB
     local Database =AceDB:New(Bartender4DB)
 
     if import then
         SetupComplete(addon)
-        pairs(WUI.BarTenderData) do
-            -
-        --- TODO: HAGA ALGO AQUÍ OmniCDDB.profiles[Profile] = NUI.OmniCDData
+		Bartender4DB.profiles[Profile] = WUI.BarTenderData.profile
+        for k, v in pairs(WUI.BarTenderData.namespaces) do
+			Bartender4DB.namespaces[k].profiles[Profile] = v
+		end
     end
 
     if not IsProfileExisting(Bartender4DB) then
         WUI.db.global.profiles[addon] = nil
         return
     end
+	
     Database:SetProfile(Profile)
+	ReloadUI()
 end
 
+function SE:Setup(addon, import)
+	local SetupFunction = SetupTable[addon]
+	WUI:LoadData()
+	SetupFunction(import, addon)
+end

@@ -19,3 +19,17 @@ function WUI:Notification(string, button1 ,AcceptFunction, button2, DeclineFunct
     }
     StaticPopup_Show(Frame)
 end
+
+function WUI:LoadData() 
+    local AddOn = "WhiteUI_Data"
+
+	if C_AddOns.LoadAddOn(AddOn) then
+		return
+	end
+
+	if not self:IsAddOnEnabled(AddOn) then
+		C_AddOns.EnableAddOn(AddOn)
+	end
+
+	C_AddOns.LoadAddOn(AddOn)
+end
