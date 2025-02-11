@@ -76,7 +76,7 @@ function SetupTable.BasicMinimap(import, addon)
 
     if import then
         SetupComplete(addon)
-		BasicMinimapSV.profiles[Profile] = WUI.BasicMinimapData.profile
+		BasicMinimapSV.profiles[Profile] = WUI.BasicMinimapData
         
     end
 
