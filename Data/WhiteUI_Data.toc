@@ -1,0 +1,9 @@
+## Title: WhiteUI_Data
+## Notes: WhiteUI_Data
+## Author: Jostvian
+## Version: 20250103.01
+## Interface: 110007
+## RequiredDeps: WhiteUI
+## LoadOnDemand: 1
+
+load.xml
