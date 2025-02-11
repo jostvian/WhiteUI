@@ -32,6 +32,14 @@ WUI.Options = {
                     func = function()
                         SE:Setup("Bartender4", true)
                     end
+                },{
+                    name = "BasicMinimap",
+                    desc = "Load Basic Minimap saved or default profile",
+                    type = "execute",
+                    hidden = function() return not WUI:IsAddOnEnabled("BasicMinimap") end,
+                    func = function()
+                        SE:Setup("BasicMinimap", true)
+                    end
                 },
             }
         },

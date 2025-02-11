@@ -5,6 +5,7 @@ local AceDB = LibStub("AceDB-3.0")
 
 local Profile = "White"
 local pairs = pairs
+local ReloadUI = ReloadUI
 local SetupTable = {}
 
 
@@ -60,6 +61,26 @@ function SetupTable.Bartender4(import, addon)
     end
 
     if not IsProfileExisting(Bartender4DB) then
+        WUI.db.global.profiles[addon] = nil
+        return
+    end
+	
+    Database:SetProfile(Profile)
+	ReloadUI()
+end
+
+function SetupTable.BasicMinimap(import, addon)
+	
+    local BasicMinimapSV = BasicMinimapSV
+    local Database =AceDB:New(BasicMinimapSV)
+
+    if import then
+        SetupComplete(addon)
+		BasicMinimapSV.profiles[Profile] = WUI.BasicMinimapData.profile
+        
+    end
+
+    if not IsProfileExisting(BasicMinimapSV) then
         WUI.db.global.profiles[addon] = nil
         return
     end
