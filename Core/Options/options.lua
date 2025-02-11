@@ -24,7 +24,7 @@ WUI.Options = {
             name = "Load Profiles",
             type = "group",
             args = {
-                bigwigs = {
+                Bartender4 = {
                     name = "Bartender4",
                     desc = "Load Bartender4 saved or default profile",
                     type = "execute",
@@ -32,7 +32,8 @@ WUI.Options = {
                     func = function()
                         SE:Setup("Bartender4", true)
                     end
-                },{
+                },
+                BasicMinimap = {
                     name = "BasicMinimap",
                     desc = "Load Basic Minimap saved or default profile",
                     type = "execute",
